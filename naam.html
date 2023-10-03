@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mini Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="font/css/fontello.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+		<style>
+			body {
+				text-align: center;
+			}
+		</style>
+
+	</head>
+		
+	<body>		
+	<h1>Mijn eerste opdracht</h1>
+	<p id="resultaat"></p>
+	
+	<script>
+
+		var naam = prompt("Wat is uw naam?");
+		var leeftijd = prompt("Hoe oud bent u?");
+		var regExp = /[a-zA-z]/
+	
+		if (!naam.length || !leeftijd.length)
+   		{
+			 document.write("geen input ontvangen")
+   		}	 
+
+	    else if (regExp.test(naam))
+		{
+			 if ( isNaN(leeftijd))
+   			{
+	 			document.write("ingevoerde symbool is een letter")
+   			}
+
+			else 
+			{
+				document.write("Hallo, " + naam + "! Jij bent " + leeftijd + " jaar oud.");
+			}
+		}
+
+		else
+		{
+			document.write("ingevoerde symbool is een cijfer")
+		}
+	
+	</script>
+
+	 <li><a href="opdrachten.html"></i>Ga terug naar opdrachten</a></li>
+
+</body>
+</html>

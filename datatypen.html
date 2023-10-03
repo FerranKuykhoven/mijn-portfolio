@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mini Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="font/css/fontello.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+		<style>
+			body {
+				text-align: center;
+			}
+		</style>
+
+	</head>
+		
+	<body>		
+	<h1>Mijn vijfde opdracht</h1>
+	<p id="resultaat"></p>
+	
+	<script>
+
+var naam = prompt("Wat is uw naam?");
+var leeftijd = parseInt(prompt("Hoe oud bent u?"));
+var gewicht = parseFloat(prompt("Hoeveel weegt u?"));
+var isGetrouwd = confirm("Bent u getrouwd?");
+
+if (naam && leeftijd) 
+{
+    var getrouwdTekst = isGetrouwd ? "wel" : "niet";
+    var zin = `Uw naam is ${naam}, U bent ${leeftijd} jaar oud, U weegt ${gewicht} kilogram en u bent ${getrouwdTekst} getrouwd.`;
+
+    document.write(zin);
+
+}
+
+else 
+{
+      document.write("Geen input ontvangen.");
+}
+
+	</script>
+
+	 <li><a href="opdrachten.html"></i>Ga terug naar opdrachten</a></li>
+
+</body>
+</html>

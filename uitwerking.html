@@ -1,0 +1,46 @@
+<script>
+// Acceptatiecriteria
+
+// Definieer de vraag-objecten
+var vragen = [
+  {
+    vraag: "Wat is de hoofdstad van Frankrijk?",
+    opties: ["0 Londen", "1 Parijs", "2 Madrid", "3 Berlijn"],
+    juisteAntwoord: 1
+  },
+  {
+    vraag: "Wat is de grootste planeet in ons zonnestelsel?",
+    opties: ["0 Mars", "1 Aarde", "2 Jupiter", "3 Saturnus"],
+    juisteAntwoord: 2
+  },
+  {
+    vraag: "Wie heeft de zwaartekracht ontdekt?",
+    opties: ["0 Albert Einstein", "1 Isaac Newton", "2 Galileo Galilei", "3 Nikola Tesla"],
+    juisteAntwoord: 1
+  }
+];
+
+var score = 0;
+
+// Functie om de vragen weer te geven en antwoorden te controleren
+function weergeefVragen() {
+  for (var i = 0; i < vragen.length; i++) {
+    console.log("Vraag " + (i + 1) + ": " + vragen[i].vraag);
+    console.log("Opties: " + vragen[i].opties.join(", "));
+
+    var antwoord = parseInt(prompt("Geef het nummer van je antwoord:"));
+
+    if (antwoord === vragen[i].juisteAntwoord) {
+      console.log("Correct antwoord!");
+      score++;
+    } else {
+      console.log("Incorrect antwoord!");
+    }
+  }
+
+  console.log("Je score is " + score + " van de " + vragen.length + " vragen.");
+}
+
+// Voer de quiz uit
+weergeefVragen();
+</script>

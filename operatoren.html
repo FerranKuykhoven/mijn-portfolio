@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mini Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="font/css/fontello.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+		<style>
+			body {
+				text-align: center;
+			}
+		</style>
+
+	</head>
+<body>
+	<h1>Mijn derde opdracht</h1>
+	<p id="resultaat"></p>
+	
+	<script>
+
+ 
+  var getal1 = prompt("Voer een getal in")
+
+  if (!getal1.length)
+   {
+	 document.write("geen input ontvangen")
+   } 
+  else if (isNaN(getal1))
+   {
+	 document.write("ingevoerde symbool is een letter")
+   }
+  else
+   { 
+     const result1 = Number(getal1) + Number(10)
+
+	 const result2 = Number(getal1) - Number(5)
+
+	 const result3 = Number(getal1) * Number(3)
+
+	 const result4 = Number(getal1) / Number(2)
+	
+     document.write(getal1 + "+10 =" + result1 + "<br>" )
+
+	 document.write(getal1 + "-5 =" + result2 + "<br>" )
+
+	 document.write(getal1 + "*3 =" + result3 + "<br>" )
+
+	 document.write(getal1 + "/2 =" + result4)
+   }
+</script>
+	
+	<li><a href="opdrachten.html"></i>Ga terug naar opdrachten</a></li>
+
+</body>
+</html>
+

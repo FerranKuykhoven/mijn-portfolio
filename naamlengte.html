@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mini Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="font/css/fontello.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+		<style>
+			body {
+				text-align: center;
+			}
+		</style>
+
+	</head>	
+
+	<body>		
+	<h1>Mijn vierde opdracht</h1>
+	<p id="resultaat"></p>
+
+	<script>
+
+		var naam = prompt("Wat is uw volledige naam?");
+		var naamzonderspatie = naam.split(' ').join('')
+		var regExp = /[a-zA-z]/
+	
+		if (!naam.length) {
+			
+			document.write("geen input ontvangen")
+
+		} else {
+
+			var naamArray = naam.split(' ');
+			var voornaam = naamArray[0];
+			var achternaam = naamArray[1];
+	
+			document.write("Hallo, " + naam + "<br>" ) 
+			document.write("Uw naam is " + naamzonderspatie.length + " letters lang" + "<br>");
+			document.write("Uw voornaam is " + voornaam + "<br>");
+			document.write("Uw achternaam is " + achternaam + "<br>");
+			
+
+		}
+	</script>
+	
+
+
+    </script>
+    
+	 <li><a href="opdrachten.html"></i>Ga terug naar opdrachten</a></li>
+
+    </body>
+    </html>

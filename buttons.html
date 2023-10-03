@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mini Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="font/css/fontello.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+		<style>
+			body {
+				text-align: center;
+			}
+		</style>
+
+	</head>
+		
+	<body>		
+	<h1>Mijn achtse opdracht</h1>
+	<p id="resultaat"></p>
+	
+    <h1>Getal: <span id="getal">0</span></h1>
+	<button id="verhoog-btn">Verhoog</button>
+	<button id="verlaag-btn">Verlaag</button>
+	<script src="script.js"></script>
+    
+<script>
+
+    const getalSpan = document.getElementById('getal');
+    const verhoogButton = document.getElementById('verhoog-btn');
+    const verlaagButton = document.getElementById('verlaag-btn');
+
+    let getal = 0;
+
+    verhoogButton.addEventListener('click', function() 
+    {
+	    getal++;
+	    getalSpan.textContent = getal;
+    });
+
+    verlaagButton.addEventListener('click', function() 
+    {
+	    getal--;
+	    getalSpan.textContent = getal;
+    });
+
+	
+</script>
+
+	 <li><a href="opdrachten.html"></i>Ga terug naar opdrachten</a></li>
+
+</body>
+</html>
